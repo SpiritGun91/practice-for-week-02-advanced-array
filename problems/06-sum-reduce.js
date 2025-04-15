@@ -12,8 +12,10 @@ console.log(sumWithReduce([])); // 0
 
 */
 
-let sumWithReduce = function(nums) {
+let sumWithReduce = function (nums) {
   // Your code here
+  if (!Array.isArray(nums)) return 0;
+  return nums.reduce((acc, num) => acc + num, 0);
 };
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
